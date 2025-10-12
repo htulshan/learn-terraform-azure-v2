@@ -76,19 +76,19 @@
 
 
 
-
-
-
-
-
-resource "azurerm_resource_group" "eus2-rg-bdf-001" {
-  name     = "Project-BDF"
-  location = "eastus2"
-}
-
-
-
-
+#
+#
+#
+#
+#
+#resource "azurerm_resource_group" "eus2-rg-bdf-001" {
+#  name     = "Project-BDF"
+#  location = "eastus2"
+#}
+#
+#
+#
+#
 # resource "azurerm_virtual_network" "eus2-vnet-hub-001" {
 #    name = "Hub-Vnet"
 # }
