@@ -35,7 +35,7 @@ module "vnet-hub-eus2-1"{
   version = "0.15.0"
   location = var.primary-dc-location
   parent_id = azurerm_resource_group.rg-hub-eus2-1.id
-  address_space = ["10.12.0.0/18", "10.12.224.0/20", "10.12.240.0/20"]
+  address_space = ["10.12.0.0/18"]
   name = "${module.naming.virtual_network.name}-hub-${var.primary-dc-location}-001"
   enable_telemetry = false
   subnets = {
