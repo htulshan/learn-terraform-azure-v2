@@ -27,8 +27,8 @@ variable "org-2" {
 
 
 
-variable "location" {
-  description = "resrouce location"
+variable "primary-dc-location"{
+  description = "resource location"
   type        = string
   default     = "eastus2"
 }
