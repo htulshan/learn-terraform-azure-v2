@@ -1,7 +1,7 @@
 
 
 
-resource "azurerm_resource_group" "rg-prod-eus2-1"{
+resource "azurerm_resource_group" "example"{
   name = "${module.naming.resource_group.name}-prod-${var.primary-dc-location}-001"
   location = var.primary-dc-location
 }
@@ -15,3 +15,4 @@ module "vnet-prod-eus2-1"{
   address_space = ["10.12.0.0/20"]
   name = "${module.naming.virtual_network.name}-prod-${var.primary-dc-location}-001"
 }
+*/
