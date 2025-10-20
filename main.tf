@@ -95,3 +95,11 @@
 
 
 
+
+
+resource "azurerm_resource_group" "example"{
+  name = "${module.naming.resource_group.name}-prod-${var.primary-dc-location}-001"
+  location = var.primary-dc-location
+}
+
+
