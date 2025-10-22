@@ -38,6 +38,9 @@ module "vnet-hub-eus2-1"{
   address_space = ["10.12.0.0/18"]
   name = "${module.naming.virtual_network.name}-hub-${var.primary-dc-location}-001"
   enable_telemetry = false
+  dns_servers = {
+    dns_servers = ["8.8.8.8", "4.4.2.2", "1.1.1.1"]
+  }
   subnets = {
     subnet0 = {
       name = "${module.naming.subnet.name}-hub-management-${var.primary-dc-location}-001"
@@ -54,6 +57,10 @@ module "vnet-hub-eus2-1"{
     subnet3 = {
       name = "${module.naming.subnet.name}-hub-dmz-${var.primary-dc-location}-001"
       address_prefixes = ["10.12.2.0/24"]
+    }
+    subnet4 = {
+      name = "GatewaySubnet"
+      address_prefixes = ["10.12.5.0/24"]
     }
   }
 }
