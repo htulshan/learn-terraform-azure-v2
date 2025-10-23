@@ -78,7 +78,7 @@ module "vnet-hub-eus2-1" {
       reverse_allow_forwarded_traffic       = true
       reverse_allow_gateway_transit         = false
       reverse_allow_virtual_network_access  = true
-      reverse_do_not_verify_remote_gateways = false
+      reverse_do_not_verify_remote_gateways = true
       reverse_enable_only_ipv6_peering      = false
       reverse_use_remote_gateways           = true
     }
