@@ -1,3 +1,3 @@
-module "naming"{
-    source = "Azure/naming/azurerm"
+module "naming" {
+  source = "Azure/naming/azurerm"
 }
